@@ -1,2 +1,2 @@
 # PowerQuality_GUI
-C# GUI for signal power quality simulation and analysis 
+Digital signal processing GUI using C# for power quality signal simulation and analysis including Harmonics, interharmoics, fourier transform and transient signals.
