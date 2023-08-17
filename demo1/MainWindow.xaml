@@ -1,0 +1,30 @@
+﻿<Window x:Class="demo1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo1"
+        mc:Ignorable="d"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="MainWindow" Height="450" Width="800">
+     <Grid>
+        <Grid Height="415" HorizontalAlignment="Left" Margin="4,4,0,0" Name="Grid1" VerticalAlignment="Top" Width="774">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="223*" />
+                <RowDefinition Height="192*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="96*" />
+                <ColumnDefinition Width="403*" />
+            </Grid.ColumnDefinitions>
+            <oxy:PlotView Name="plotView" Grid.Row = "0" Grid.Column = "1" />
+            <Button Content="Plot" Height="23" HorizontalAlignment="Left" Margin="37,195,0,0" Name="plotButton" VerticalAlignment="Top" Width="75" Click="GeneratePlot" />
+            <RadioButton Content="Harmonics" Height="16" HorizontalAlignment="Left" Margin="16,108,0,0" Name="harmonicsButton" VerticalAlignment="Top" />
+            <TextBox Height="19" HorizontalAlignment="Left" Margin="6,25,0,0" Name="ampBox" VerticalAlignment="Top" Width="131" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,6,0,0" Name="ampLabel" Text="Amplitude" VerticalAlignment="Top" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,50,0,0" Name="freqLabel" Text="Frequency" VerticalAlignment="Top" />
+            <TextBox Height="22" HorizontalAlignment="Left" Margin="6,71,0,0" Name="freqBox" VerticalAlignment="Top" Width="131" />
+            <Slider Height="22" HorizontalAlignment="Left" Margin="6,130,0,0" Name="harmonicsSlider" VerticalAlignment="Top" Width="131" />
+        </Grid>
+    </Grid>
+</Window>
