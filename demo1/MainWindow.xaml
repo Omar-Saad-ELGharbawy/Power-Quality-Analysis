@@ -18,6 +18,7 @@
                 <ColumnDefinition Width="403*" />
             </Grid.ColumnDefinitions>
             <oxy:PlotView Name="plotView" Grid.Row = "0" Grid.Column = "1" />
+            <oxy:PlotView Name="plotView2" Grid.Row = "1" Grid.Column = "1" />
             <Button Content="Plot" Height="23" HorizontalAlignment="Left" Margin="37,195,0,0" Name="plotButton" VerticalAlignment="Top" Width="75" Click="GeneratePlot" />
             <RadioButton Content="Harmonics" Height="16" HorizontalAlignment="Left" Margin="16,108,0,0" Name="harmonicsButton" VerticalAlignment="Top" />
             <TextBox Height="19" HorizontalAlignment="Left" Margin="6,25,0,0" Name="ampBox" VerticalAlignment="Top" Width="131" />
