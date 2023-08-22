@@ -8,6 +8,8 @@ using OxyPlot.Series;
 using OxyPlot.Wpf;
 using MathNet;
 using MathNet.Numerics.IntegralTransforms;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 namespace demo2
 {
     /// <summary>
@@ -15,9 +17,13 @@ namespace demo2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<DataHarm> HarmData = new ObservableCollection<DataHarm>();
+        private ObservableCollection<DataTime> TimeData = new ObservableCollection<DataTime>();
         public MainWindow()
         {
             InitializeComponent();
+            DataGrid1.ItemsSource = HarmData;
+            DataGrid2.ItemsSource = TimeData;
         }
         // Switch to transient Tab
         private void transShow(object sender,RoutedEventArgs e){
@@ -25,46 +31,69 @@ namespace demo2
             secondWindow.Show();
             this.Close();
         }
+        // get value from textbox
+        private int getValue(TextBox b1){
+            int value = 0;
+            if(b1.Text != ""){
+                value = int.Parse(b1.Text);
+            }
+            return value;
+        }
         //Plot button function
         private void Plot(object sender,RoutedEventArgs e){
-            int Fs = 1000;
+            // int Fs = ;
+            int Fs = getValue(FSBox);
             double []time=new double[Fs];
             double []signal =new double[Fs];
             double []freqs=new double[(int)(Fs/2)];
             double []mags =new double[Fs];
-            double []harmfreqs =new double[1000];
-            double []harmmags =new double[1000];
+            double sinTime = 0;
+            double fftTime = 0;
+            double harmTime = 0;
             int amp = 1;
-            int freq = 1;
-            if(AmpBox.Text != ""){
-                amp = int.Parse(AmpBox.Text);
-            }
-            if(FreqBox.Text != ""){
-                freq = int.Parse(FreqBox.Text);
-            }         
+            int freq = 1;       
+            amp = getValue(AmpBox);
+            freq = getValue(FreqBox);
+            
             if (HarmBox.SelectedItem != null)
             {
                 string selectedText = ((ComboBoxItem)HarmBox.SelectedItem).Content.ToString();
                 int selectedNum = int.Parse(selectedText);
-                (time,signal) = generateSin(amp,freq,1,1000,true,selectedNum);
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                (time,signal) = generateSin(amp,freq,1,Fs,true,selectedNum);
+                stopwatch.Stop();
+                sinTime = stopwatch.Elapsed.TotalMilliseconds;
             }
             else{
-                (time,signal) = generateSin(amp,freq,1,1000);
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                (time,signal) = generateSin(amp,freq,1,Fs);
+                stopwatch.Stop();
             }
             drawSignal(time,signal,SinePlot,"sine plot","Time","SineWave","SineWave");
-            (freqs,mags) = getFFT(signal,Fs);
+            Stopwatch stopwatch2 = new Stopwatch();
+            stopwatch2.Start();
+            (freqs,mags) = getFFT(signal,Fs,1);
+            stopwatch2.Stop();
+            fftTime = stopwatch2.Elapsed.TotalMilliseconds;
             drawSignal(freqs,mags,FouPlot,"Fourier plot","Frequency","Magnitude","Fou");
-            // (harmfreqs,harmmags)=getHarmonics(freqs,mags,freq,Fs);
-            // displayHarms(harmfreqs,harmmags);
-            // Harm1Box.Text = harmfreqs.Length.ToString();
+            HarmData.Clear();
+            Stopwatch stopwatch3 = new Stopwatch();
+            stopwatch3.Start();
+            getHarmonics(freqs,mags,freq,Fs);
+            stopwatch3.Stop();
+            harmTime = stopwatch3.Elapsed.TotalMilliseconds;
+            TimeData.Add(new DataTime { SineTime = sinTime, FFTTime = fftTime, HarmTime = harmTime });
         }
         //Generate Pure Sine wave
         private (double [],double[]) generateSin(double amp=1,int frequency=1,double duration=1,int fs=100,bool harmonics=false,int harmsValue=1){
             int size = (int) (fs*duration);
             double[] signal = new double[size];
             double[] time = new double[size];
-            for(double x=0;x<duration;x+=1.0/fs){
-                int ind = (int)(fs * x);
+            for(int ind=0;ind<fs*duration;ind+=1){
+                // int ind = (int)(fs * x);
+                double x = (double)ind/fs;
                 signal[ind] = amp*Math.Sin(2*x*Math.PI*frequency);
                 if(harmonics){
                     for(int i=2;i<2+harmsValue;i++){
@@ -76,8 +105,9 @@ namespace demo2
             return (time,signal);
         }
         // Get fourier of signal : this function takesignal and frequency of sampling and return frequency vector and magnitude in frequency domain
-        private (double [],double[]) getFFT(double[] signal,int fs){
+        private (double [],double[]) getFFT(double[] signal,int fs,double duration=1){
             // create variables of freq and mag
+            // int size = (int) (fs*duration);
             double []frequencies = new double[(int)(fs/2)];
             Complex [] mag = new Complex[fs];
             // convert signal array to complex one to preform fft on it
@@ -113,42 +143,17 @@ namespace demo2
             plotModel.Series.Add(sineWaveSeries);
             p.Model = plotModel;
         }
-        // detect harmonics in signal
-        private (double[],double[]) getHarmonics(double[] frequencies,double[] signal,int fundmentalFreq,int fs){
-            double [] mags = new double[10];
-            double [] freqs = new double[10];
-            int j=0;
-            for(int i=0;i<fs;i++){
-                if(i%fundmentalFreq==0){
-                    // int ind = getIndex(freqs,i,0.3);
-                    Harm2Box.Text = i.ToString();
-                    double target = (double)i;
-                    int ind = FindNearestIndex(freqs,target);
-                    mags[j] = ind;
-                    freqs[j] = frequencies[ind];
+        private void getHarmonics(double[] frequencies,double[] signal,int fundmentalFreq,int fs)
+        {
+            int j =0;
+            string [] orders = {"1st","2nd","3rd","4th","5th","6th","7th","8th","9th","10th"};
+            for(int i=fundmentalFreq;i<fs;i+=fundmentalFreq){
+                int ind = FindNearestIndex(frequencies,i);
+                if(signal[ind]>0.01){
+                    HarmData.Add(new DataHarm { Index = ind, Order=orders[j],mag = Math.Round(signal[ind],5), freq = Math.Round(frequencies[ind],5) });
                     j++;
                 }
             }
-            Array.Resize(ref mags, j);   // Resize arrays to actual number of elements
-            Array.Resize(ref freqs, j);
-            return(freqs,mags);
-        }
-        private void displayHarms(double []freqs,double[] mags){
-            TextBlock [] boxes = {Harm1Box,Harm3Box};
-            for(int i=0;i<freqs.Length;i++){
-                boxes[i].Text = mags[i].ToString();
-                if(i==2){
-                    break;
-                }
-            }
-        }
-        private int getIndex(double []array,int target,double diff){
-            for(int i=0;i<array.Length;i++){
-                if((array[i]-target)<=diff){
-                    return i;
-                }
-            }
-            return 0;
         }
         private int FindNearestIndex(double[] array, double target)
         {
