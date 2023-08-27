@@ -1,0 +1,17 @@
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.csproj.AssemblyReference.cache
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.GeneratedMSBuildEditorConfig.editorconfig
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.AssemblyInfoInputs.cache
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.AssemblyInfo.cs
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.csproj.CoreCompileInputs.cache
+G:\Bio\GPU2\bin\Debug\net7.0\GPU2.exe
+G:\Bio\GPU2\bin\Debug\net7.0\GPU2.deps.json
+G:\Bio\GPU2\bin\Debug\net7.0\GPU2.runtimeconfig.json
+G:\Bio\GPU2\bin\Debug\net7.0\GPU2.dll
+G:\Bio\GPU2\bin\Debug\net7.0\GPU2.pdb
+G:\Bio\GPU2\bin\Debug\net7.0\OpenCL.Net.dll
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.csproj.CopyComplete
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.dll
+G:\Bio\GPU2\obj\Debug\net7.0\refint\GPU2.dll
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.pdb
+G:\Bio\GPU2\obj\Debug\net7.0\GPU2.genruntimeconfig.cache
+G:\Bio\GPU2\obj\Debug\net7.0\ref\GPU2.dll
