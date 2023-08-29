@@ -1,0 +1,17 @@
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.csproj.AssemblyReference.cache
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.GeneratedMSBuildEditorConfig.editorconfig
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.AssemblyInfoInputs.cache
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.AssemblyInfo.cs
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.csproj.CoreCompileInputs.cache
+G:\Bio\MultiModule\bin\Debug\net7.0\MultiModule.exe
+G:\Bio\MultiModule\bin\Debug\net7.0\MultiModule.deps.json
+G:\Bio\MultiModule\bin\Debug\net7.0\MultiModule.runtimeconfig.json
+G:\Bio\MultiModule\bin\Debug\net7.0\MultiModule.dll
+G:\Bio\MultiModule\bin\Debug\net7.0\MultiModule.pdb
+G:\Bio\MultiModule\bin\Debug\net7.0\OpenCL.Net.dll
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.csproj.CopyComplete
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.dll
+G:\Bio\MultiModule\obj\Debug\net7.0\refint\MultiModule.dll
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.pdb
+G:\Bio\MultiModule\obj\Debug\net7.0\MultiModule.genruntimeconfig.cache
+G:\Bio\MultiModule\obj\Debug\net7.0\ref\MultiModule.dll
