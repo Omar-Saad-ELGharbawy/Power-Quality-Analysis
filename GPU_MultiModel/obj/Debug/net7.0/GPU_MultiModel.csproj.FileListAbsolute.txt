@@ -1,0 +1,17 @@
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\GPU_MultiModel.exe
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\GPU_MultiModel.deps.json
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\GPU_MultiModel.runtimeconfig.json
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\GPU_MultiModel.dll
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\GPU_MultiModel.pdb
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.csproj.AssemblyReference.cache
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.GeneratedMSBuildEditorConfig.editorconfig
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.AssemblyInfoInputs.cache
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.AssemblyInfo.cs
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.csproj.CoreCompileInputs.cache
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.dll
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\refint\GPU_MultiModel.dll
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.pdb
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.genruntimeconfig.cache
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\ref\GPU_MultiModel.dll
+G:\Bio\GPU_MultiModel\bin\Debug\net7.0\OpenCL.Net.dll
+G:\Bio\GPU_MultiModel\obj\Debug\net7.0\GPU_MultiModel.csproj.CopyComplete
