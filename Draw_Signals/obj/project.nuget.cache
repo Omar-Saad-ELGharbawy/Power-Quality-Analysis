@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "vooCpQwdol6GYktg0xQV3W6OaHtsrurCPz4YrqxyuN3JhrMikcK0cHkFfQlObotzHSqamNf/i9Rq0GWGbFIQFg==",
+  "success": true,
+  "projectFilePath": "G:\\Bio Intern\\C#_Workspace\\Draw_Signals\\Draw_Signals.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\fftsharp\\1.1.6\\fftsharp.1.1.6.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\scottplot\\4.1.67\\scottplot.4.1.67.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\spectrogram\\1.6.1\\spectrogram.1.6.1.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512",
+    "C:\\Users\\Omar Saad\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
