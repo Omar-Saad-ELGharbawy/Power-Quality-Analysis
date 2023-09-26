@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "GtDwSs/XdOWM6X9IeHD//K1xWBxg20OZeg2dyS+Cm7IoN1WSM6k2f1ulzvs3dwFnfyBhpnEPb6OPGprMBb/MMg==",
+  "success": true,
+  "projectFilePath": "G:\\Bio\\PI\\GPU_info\\GPU_info.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\opencl.net\\2.2.9\\opencl.net.2.2.9.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenCL.Net 2.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenCL.Net",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
