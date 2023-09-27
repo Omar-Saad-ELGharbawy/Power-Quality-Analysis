@@ -4,7 +4,7 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Project Structure](#project-structure)
-* [GUI Preview] (#GUI_preview)
+* [GUI Preview] (#gui_preview)
 * [Technologies](#technologies)
 
 ## Introduction
