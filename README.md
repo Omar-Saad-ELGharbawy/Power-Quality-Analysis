@@ -1,4 +1,4 @@
-# PowerQuality Analysis 
+# Power Quality Analysis 
 ***
 
 ## Table of contents
