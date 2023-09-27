@@ -4,7 +4,7 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Project Structure](#project-structure)
-* [GUI Preview](#gui_preview)
+* [GUI](#gui)
 * [Technologies](#technologies)
 
 ## Introduction
@@ -52,7 +52,7 @@ PowerQuality Analysis
 README.md
 ```
 
-## GUI Preview
+## GUI 
 The GUI is written in C# WPF and it is divided into 2 main parts :
 
 - Harmonics Window
