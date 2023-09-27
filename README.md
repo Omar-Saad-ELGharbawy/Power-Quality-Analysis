@@ -1,4 +1,4 @@
-# PowerQuality Analysis 
+![Harmonics Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/1b191b8c-08ca-438a-accf-80f4cbd89aad)# PowerQuality Analysis 
 
 ***
 
@@ -53,6 +53,13 @@ README.md
 ### GUI
 The GUI is written in C# WPF and it is divided into 2 main parts :
 
+- Harmonics Window
+
+![Harmonics Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/a51e673e-e9aa-4290-83bd-bbe82a79cbc8)
+
+- Transient Window
+
+![Transient Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/fc045f09-0362-4d2e-affd-68ee373c455b)
 
 
 ## Technologies
