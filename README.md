@@ -1,6 +1,82 @@
 # PowerQuality Analysis 
-Digital signal processing Algorithms for Power Quality signals Simulation and Analysis Including : 
+
+***
+
+## Table of contents
+* [Introduction](#introduction)
+* [Project Structure](#project-structure)
+* [Technologies](#technologies)
+
+
+
+## Introduction
+
+This project applies different Digital Signal processing Algorithms for Power Quality AC Signals to Simulate and Analyse:
 - Harmonics.
 - Transient signals.
-***
+
+The Algorithms are written in Octave and then converted to C++ to be used in the GUI. The Algorithms are also optimized to run on GPU using CUDA.
+
+### What is Harmonics
+
+### What is Transient
+Transients in power quality signals are sudden and temporary changes characterized by voltage or current variations. They can result from switching operations, lightning strikes, or equipment faults. These transients can lead to harmful effects such as equipment damage, data corruption, and increased downtime. Detecting and analyzing transients helps in safeguarding equipment, improving reliability, minimizing downtime, and ensuring compliance with power quality standards.
+
+
+## Project Structure
+
+The project is divided into 3 main parts :
+- WPF GUI : A Graphical User Interface to display the results of the Algorithms.
+- Octave Scripts : The Algorithms are written in Octave and then converted to C++.
+- GPU Optimizations : The Algorithms are optimized to run on GPU using CUDA.
+  
+```
+PowerQuality Analysis
+├─  WPF GUI
+│  ├─  Mainwindow (Harmonics WPF Window)
+│  ├─  Secondwindow (Transient WPF Window)
+│  ├─  Transient Algorithms
+│     ├─  SignalGenerator.cs
+│     ├─  TransientDetection.cs
+│     └─  FourierFilters.cs
+│  ├─  Harmonics Algorithms
+│  └─ GUI_README.md
+├─  Octave Scripts
+│  ├─  Harmonics
+│  └─ Transient Analysis
+├─  GPU Optimizations
+│  ├─ GPU_info
+│  └─ Convolution
+README.md
+```
+
+### GUI
+The GUI is written in C# WPF and it is divided into 2 main parts :
+
+
+
+## Technologies
+
+### Development Technologies
+Project is created with:
+* C# .NET Framework 
+* C# WPF
+* Octave
+* CUDA 
+* Visual Studio 
+* Visual Studio Code
+
+### Scientific Technologies
+* OOP
+* Signal Processing
+* Digital Signal Processing
+* Fourier Analysis
+* Short Time Fourier Transform Analysis
+* GPU Programming
+
+
+
+
+
+
 

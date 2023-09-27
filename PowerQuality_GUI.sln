@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUI", "GUI\GUI.csproj", "{C17EF0B1-FF64-43CE-8A9A-A9AD2D7A2B89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Raspberry PI GPU", "Raspberry PI GPU", "{0166389A-C760-495F-BBC3-8EE4F592719F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convolution", "Raspberry PI GPU\Convolution\Convolution.csproj", "{765AA931-3B35-45E7-8FFB-6C21DC2D154B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPU_info", "Raspberry PI GPU\GPU_info\GPU_info.csproj", "{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C17EF0B1-FF64-43CE-8A9A-A9AD2D7A2B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17EF0B1-FF64-43CE-8A9A-A9AD2D7A2B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17EF0B1-FF64-43CE-8A9A-A9AD2D7A2B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17EF0B1-FF64-43CE-8A9A-A9AD2D7A2B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765AA931-3B35-45E7-8FFB-6C21DC2D154B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765AA931-3B35-45E7-8FFB-6C21DC2D154B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765AA931-3B35-45E7-8FFB-6C21DC2D154B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765AA931-3B35-45E7-8FFB-6C21DC2D154B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{765AA931-3B35-45E7-8FFB-6C21DC2D154B} = {0166389A-C760-495F-BBC3-8EE4F592719F}
+		{DC1433F3-C4AF-4A6E-9CB7-FF15E82A8476} = {0166389A-C760-495F-BBC3-8EE4F592719F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6262A82D-9F80-453D-96A0-7344B6979D93}
+	EndGlobalSection
+EndGlobal
