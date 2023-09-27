@@ -62,6 +62,11 @@ The GUI is written in C# WPF and it is divided into 2 main parts :
 ![Transient Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/fc045f09-0362-4d2e-affd-68ee373c455b)
 
 
+### Octave Scripts
+
+
+
+
 ## Technologies
 
 ### Development Technologies
@@ -83,6 +88,6 @@ Project is created with:
 
 ### Team
 Biomedical Engineers :
-- [Omar_Saad!](https://github.com/Omar-Saad-ELGharbawy)
-- [Ahmed_Hassan!](https://github.com/ahmedhassan187)
+- [Omar_Saad](https://github.com/Omar-Saad-ELGharbawy)
+- [Ahmed_Hassan](https://github.com/ahmedhassan187)
 
