@@ -81,13 +81,8 @@ Project is created with:
 * Short Time Fourier Transform Analysis
 * GPU Programming
 
-
-
-
-
 ### Team
-
 Biomedical Engineers :
-- [Omar Saad !] (https://github.com/Omar-Saad-ELGharbawy)
-- [Ahmed Hassan !] (https://github.com/ahmedhassan187)
+- [Omar_Saad!](https://github.com/Omar-Saad-ELGharbawy)
+- [Ahmed_Hassan!](https://github.com/ahmedhassan187)
 
