@@ -5,6 +5,7 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Project Structure](#project-structure)
+* [GUI Preview] (#GUI_preview)
 * [Technologies](#technologies)
 
 
@@ -22,6 +23,11 @@ The Algorithms are written in Octave and then converted to C++ to be used in the
 ### What is Transient
 Transients in power quality signals are sudden and temporary changes characterized by voltage or current variations. They can result from switching operations, lightning strikes, or equipment faults. These transients can lead to harmful effects such as equipment damage, data corruption, and increased downtime. Detecting and analyzing transients helps in safeguarding equipment, improving reliability, minimizing downtime, and ensuring compliance with power quality standards.
 
+- Signal with transients
+![Signal with Multiple Transients](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/5ca919a0-d402-45cc-8962-0e5bf8d3dffe)
+
+- Transients Localization using STFT
+![STFT](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/b5ce517f-f2c9-48a4-b0d5-5db22e5f546f)
 
 ## Project Structure
 
@@ -39,8 +45,7 @@ PowerQuality Analysis
 │     ├─  SignalGenerator.cs
 │     ├─  TransientDetection.cs
 │     └─  FourierFilters.cs
-│  ├─  Harmonics Algorithms
-│  └─ GUI_README.md
+│  └─  Harmonics Algorithms
 ├─  Octave Scripts
 │  ├─  Harmonics
 │  └─ Transient Analysis
@@ -50,7 +55,7 @@ PowerQuality Analysis
 README.md
 ```
 
-### GUI
+## GUI Preview
 The GUI is written in C# WPF and it is divided into 2 main parts :
 
 - Harmonics Window
@@ -60,11 +65,6 @@ The GUI is written in C# WPF and it is divided into 2 main parts :
 - Transient Window
 
 ![Transient Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/fc045f09-0362-4d2e-affd-68ee373c455b)
-
-
-### Octave Scripts
-
-
 
 
 ## Technologies
