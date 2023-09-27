@@ -1,0 +1,33 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Transient_GUI"
+        xmlns:oxy="http://oxyplot.org/wpf" x:Class="Transient_GUI.SecondWindow"
+        mc:Ignorable="d"
+       Title="Tarnsient Window" Height="676" Width="1000">
+    <Grid Margin="0,-13,-10,-16">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="27,79,0,0" Name="StartTimeabel" Text="StartTime" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="29,192,0,0" Name="AmplitudeLabel" Text="Amplitude" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="27,136,0,0" Name="FrequencyLabel" Text="Frequency" VerticalAlignment="Top" />
+
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="27,97,0,0" Name="StartTimeBox" VerticalAlignment="Top" Width="119" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="27,154,0,0" Name="FrequencyBox" VerticalAlignment="Top" Width="119" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="27,211,0,0" Name="AmplitudeBox" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.518,-1.864" />
+        <Button Content="Harmonics" Height="28" HorizontalAlignment="Left" Margin="11,33,0,0" x:Name="HarmButton" VerticalAlignment="Top" Width="92" Click="harmShow"/>
+        <oxy:PlotView x:Name="TransientPlot" Margin="329,33,39,324" />
+        <Button Content="Add Transient" HorizontalAlignment="Left" Margin="24,257,0,0" VerticalAlignment="Top" Width="122" Click="Draw" Height="29"/>
+        <Button Content="Analyse Transients" HorizontalAlignment="Left" Margin="163,333,0,0" VerticalAlignment="Top" Width="146" Click="analyseTransient" Height="26" />
+
+        <DataGrid AutoGenerateColumns="True" Height="200" HorizontalAlignment="Left" Name="TransientGrid" VerticalAlignment="Top" Width="230" Margin="37,443,0,0" />
+        <DataGrid AutoGenerateColumns="True" Height="200" HorizontalAlignment="Left" x:Name="OutputGrid" VerticalAlignment="Top" Width="367" Margin="547,443,0,0" />
+        <TextBlock Height="19" HorizontalAlignment="Left" Margin="75,410,0,0" x:Name="StartTimeabel_Copy" Text="Transient Input Parameters" VerticalAlignment="Top" Width="154" />
+        <TextBlock Height="19" HorizontalAlignment="Left" Margin="664,410,0,0" x:Name="StartTimeabel_Copy1" Text="Transient Analysis" VerticalAlignment="Top" Width="154" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="14,312,0,0" x:Name="TextBlock2" Text="Transient Threshold" VerticalAlignment="Top" Width="125" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="14,346,0,0" x:Name="TransientThresholdBox" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.518,-1.864" Text="200" />
+
+
+
+    </Grid>
+</Window>
