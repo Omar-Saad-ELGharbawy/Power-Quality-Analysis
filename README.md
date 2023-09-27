@@ -59,7 +59,7 @@ The GUI is written in C# WPF and it is divided into 2 main parts :
 
 ### Development Technologies
 Project is created with:
-* C# .NET Framework 
+* C# .NET Framework
 * C# WPF
 * Octave
 * CUDA 
@@ -78,5 +78,9 @@ Project is created with:
 
 
 
+### Team
 
+Biomedical Engineers :
+- [Omar Saad !] (https://github.com/Omar-Saad-ELGharbawy)
+- [Ahmed Hassan !] (https://github.com/ahmedhassan187)
 
