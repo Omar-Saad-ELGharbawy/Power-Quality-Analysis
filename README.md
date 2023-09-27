@@ -1,5 +1,4 @@
-![Harmonics Window](https://github.com/Omar-Saad-ELGharbawy/PowerQuality_GUI/assets/84602951/1b191b8c-08ca-438a-accf-80f4cbd89aad)# PowerQuality Analysis 
-
+# PowerQuality Analysis 
 ***
 
 ## Table of contents
@@ -7,8 +6,6 @@
 * [Project Structure](#project-structure)
 * [GUI Preview] (#GUI_preview)
 * [Technologies](#technologies)
-
-
 
 ## Introduction
 
