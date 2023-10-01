@@ -4,6 +4,7 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Project Structure](#project-structure)
+* [GPU](#gpu)
 * [GUI](#gui)
 * [Technologies](#technologies)
 
@@ -13,10 +14,10 @@ This project applies different Digital Signal processing Algorithms for Power Qu
 - Harmonics.
 - Transient signals.
 
-The Algorithms are written in Octave and then converted to C++ to be used in the GUI. The Algorithms are also optimized to run on GPU using CUDA.
+The Algorithms are written in Octave and then converted to C++ to be used in the GUI. The Algorithms are also optimized to run on GPU using OpenCL.
 
 ### What is Harmonics
-
+Harmonics refer to the multiples of a fundamental frequency that are produced when a complex wave or sound is analyzed in terms of its individual sinusoidal components. In simpler terms, harmonics are the additional frequencies that accompany a fundamental frequency when a sound or waveform is produced. 
 ### What is Transient
 Transients in power quality signals are sudden and temporary changes characterized by voltage or current variations. They can result from switching operations, lightning strikes, or equipment faults. These transients can lead to harmful effects such as equipment damage, data corruption, and increased downtime. Detecting and analyzing transients helps in safeguarding equipment, improving reliability, minimizing downtime, and ensuring compliance with power quality standards.
 
@@ -31,7 +32,7 @@ Transients in power quality signals are sudden and temporary changes characteriz
 The project is divided into 3 main parts :
 - WPF GUI : A Graphical User Interface to display the results of the Algorithms.
 - Octave Scripts : The Algorithms are written in Octave and then converted to C++.
-- GPU Optimizations : The Algorithms are optimized to run on GPU using CUDA.
+- GPU Optimizations : The Algorithms are optimized to run on GPU using OpenCL.
   
 ```
 PowerQuality Analysis
@@ -51,7 +52,10 @@ PowerQuality Analysis
 │  └─ Convolution
 README.md
 ```
-
+## GPU
+there are two main parts of the GPU code that run some tasks on the GPU. So this repo contains two parts
+- GPU_Info:- print the platforms and devices available and works with OpenCL.
+- Convolution:- run convolution code on CPU and on GPU and log the time of both methods and check about the results. 
 ## GUI 
 The GUI is written in C# WPF and it is divided into 2 main parts :
 
